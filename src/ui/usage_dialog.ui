@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UsageDialog</class>
+ <widget class="QDialog" name="UsageDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>236</width>
+    <height>227</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-50</y>
+     <width>521</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #f5f6fa;
+    font-family: 'Segoe UI';
+    color: #2f3640;
+    font-size: 14px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>20</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans KR</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>이용 추가</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinLaundry">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>69</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+    background-color: white;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QSpinBox:focus {
+    border: 1px solid #4b7bec;
+}
+
+QSpinBox {
+    background: #FFFFFF;      /* 흰색 배경 */
+    color: #000000;           /* 검은 글자 */
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+
+
+
+</string>
+   </property>
+   <property name="maximum">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinDry">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>69</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+    background-color: white;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+QSpinBox:focus {
+    border: 1px solid #4b7bec;
+}
+
+QSpinBox {
+    background: #FFFFFF;      /* 흰색 배경 */
+    color: #000000;           /* 검은 글자 */
+    border: 1px solid #D0D0D0;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+
+
+
+</string>
+   </property>
+   <property name="maximum">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans KR</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>작업1 횟수</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans KR</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>작업2 횟수</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnSubmit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans KR</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>추가</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnCancel">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>170</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Noto Sans KR</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>취소</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
