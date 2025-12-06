@@ -35,7 +35,7 @@ def save_logs(log_entry):
     log_entry['date'] = datetime.now().strftime("%Y-%m-%d %H:%M")
     logs.append(log_entry)
     with open(HISTORY_FILE, 'w', encoding='utf-8') as f:
-        json.dump(logs, f, indent=4)
+        json.dump(logs, f, ensure_ascii=False, indent=4)
         
 def delete_users(phone_list):
     """데이터 딕셔너리에서 사용자를 삭제하고 저장함"""

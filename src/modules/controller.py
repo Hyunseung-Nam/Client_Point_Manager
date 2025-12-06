@@ -8,7 +8,7 @@ from ui.log_dialog_view import LogDialog
 from ui.usage_dialog_view import UsageDialog
 
 # [상수 정의]
-POINTS_TO_GIVE = 2000
+POINTS_TO_GIVE = 1000
 COUNTS_FOR_REWARD = COUNTS_FOR_REWARD
 
 # [클래스 정의]
@@ -112,7 +112,7 @@ class Controller:
             save_users(self.users)
             
             # View에게 완료 메시지 및 갱신 명령
-            self.view.show_information("등록 완료", "등록이 완료되었습니다.")
+            self.view.show_information("추가 완료", "추가되었습니다.")
             self.update_dashboard_command()
             
     # ----------------------------------------
