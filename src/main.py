@@ -1,11 +1,13 @@
 # 실행부
 
 import sys
+from modules.storage import ensure_files_exist
 from PySide6.QtWidgets import QApplication
 from ui.main_window_view import MainWindow
 from modules.controller import Controller
 
 def main():
+    ensure_files_exist()
     app = QApplication(sys.argv)
     
     # View 객체 생성 (MainWindow)
