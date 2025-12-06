@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'usage_dialogVYGPbe.ui'
+## Form generated from reading UI file 'usage_dialogZaZNOk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -35,7 +35,7 @@ class Ui_UsageDialog(object):
 "}")
         self.label_6 = QLabel(UsageDialog)
         self.label_6.setObjectName(u"label_6")
-        self.label_6.setGeometry(QRect(80, 20, 161, 21))
+        self.label_6.setGeometry(QRect(70, 20, 161, 21))
         font = QFont()
         font.setFamilies([u"Noto Sans KR"])
         font.setPointSize(12)
@@ -43,7 +43,7 @@ class Ui_UsageDialog(object):
         self.label_6.setFont(font)
         self.spinLaundry = QSpinBox(UsageDialog)
         self.spinLaundry.setObjectName(u"spinLaundry")
-        self.spinLaundry.setGeometry(QRect(80, 70, 69, 23))
+        self.spinLaundry.setGeometry(QRect(100, 70, 69, 23))
         self.spinLaundry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -69,7 +69,7 @@ class Ui_UsageDialog(object):
         self.spinLaundry.setMaximum(20)
         self.spinDry = QSpinBox(UsageDialog)
         self.spinDry.setObjectName(u"spinDry")
-        self.spinDry.setGeometry(QRect(80, 120, 69, 23))
+        self.spinDry.setGeometry(QRect(100, 120, 69, 23))
         self.spinDry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -95,14 +95,14 @@ class Ui_UsageDialog(object):
         self.spinDry.setMaximum(20)
         self.label_4 = QLabel(UsageDialog)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(20, 60, 71, 41))
+        self.label_4.setGeometry(QRect(30, 60, 71, 41))
         font1 = QFont()
         font1.setFamilies([u"Noto Sans KR"])
         font1.setBold(True)
         self.label_4.setFont(font1)
         self.label_3 = QLabel(UsageDialog)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(20, 110, 71, 41))
+        self.label_3.setGeometry(QRect(30, 110, 71, 41))
         self.label_3.setFont(font1)
         self.btnSubmit = QPushButton(UsageDialog)
         self.btnSubmit.setObjectName(u"btnSubmit")
@@ -126,7 +126,7 @@ class Ui_UsageDialog(object):
 "")
         self.btnCancel = QPushButton(UsageDialog)
         self.btnCancel.setObjectName(u"btnCancel")
-        self.btnCancel.setGeometry(QRect(120, 170, 81, 31))
+        self.btnCancel.setGeometry(QRect(130, 170, 81, 31))
         self.btnCancel.setFont(font1)
         self.btnCancel.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4b7bec;\n"
@@ -152,9 +152,9 @@ class Ui_UsageDialog(object):
 
     def retranslateUi(self, UsageDialog):
         UsageDialog.setWindowTitle(QCoreApplication.translate("UsageDialog", u"Dialog", None))
-        self.label_6.setText(QCoreApplication.translate("UsageDialog", u"\uc774\uc6a9 \ucd94\uac00", None))
-        self.label_4.setText(QCoreApplication.translate("UsageDialog", u"\uc791\uc5c51 \ud69f\uc218", None))
-        self.label_3.setText(QCoreApplication.translate("UsageDialog", u"\uc791\uc5c52 \ud69f\uc218", None))
+        self.label_6.setText(QCoreApplication.translate("UsageDialog", u"\ud65c\ub3d9 \ud69f\uc218 \ucd94\uac00", None))
+        self.label_4.setText(QCoreApplication.translate("UsageDialog", u"\ud65c\ub3d9 A \ud69f\uc218", None))
+        self.label_3.setText(QCoreApplication.translate("UsageDialog", u"\ud65c\ub3d9 B \ud69f\uc218", None))
         self.btnSubmit.setText(QCoreApplication.translate("UsageDialog", u"\ucd94\uac00", None))
         self.btnCancel.setText(QCoreApplication.translate("UsageDialog", u"\ucde8\uc18c", None))
     # retranslateUi

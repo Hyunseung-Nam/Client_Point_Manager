@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'log_dialogmpaYol.ui'
+## Form generated from reading UI file 'log_dialogLAHPzS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -124,7 +124,7 @@ class Ui_LogDialog(object):
 
     def retranslateUi(self, LogDialog):
         LogDialog.setWindowTitle(QCoreApplication.translate("LogDialog", u"Dialog", None))
-        self.label_5.setText(QCoreApplication.translate("LogDialog", u"\ub9ac\uc6cc\ub4dc \uc9c0\uae09 \ub0b4\uc5ed", None))
+        self.label_5.setText(QCoreApplication.translate("LogDialog", u"\ud3ec\uc778\ud2b8 \uc9c0\uae09 \ub0b4\uc5ed", None))
         ___qtablewidgetitem = self.tableLogs.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("LogDialog", u"\ubc88\ud638", None));
         ___qtablewidgetitem1 = self.tableLogs.horizontalHeaderItem(1)
@@ -132,7 +132,7 @@ class Ui_LogDialog(object):
         ___qtablewidgetitem2 = self.tableLogs.horizontalHeaderItem(2)
         ___qtablewidgetitem2.setText(QCoreApplication.translate("LogDialog", u"\uc804\ud654\ubc88\ud638", None));
         ___qtablewidgetitem3 = self.tableLogs.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("LogDialog", u"\ub9ac\uc6cc\ub4dc", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("LogDialog", u"\ud3ec\uc778\ud2b8", None));
         ___qtablewidgetitem4 = self.tableLogs.horizontalHeaderItem(4)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("LogDialog", u"\uc9c0\uae09 \uc0ac\uc720", None));
         self.btnClose.setText(QCoreApplication.translate("LogDialog", u"\ub2eb\uae30", None))

@@ -3,4 +3,4 @@
 
 CUSTOMER_REGISTERED = "등록이 완료되었습니다."
 ERROR_SELECT_CUSTOMER = "사용자를 한 명 이상 선택해주세요."
-CONFIRM_REWARD_PAYMENT = "선택하신 사용자에게 리워드를 지급하시겠습니까?"
+CONFIRM_REWARD_PAYMENT = "선택하신 사용자에게 포인트를 지급하시겠습니까?"

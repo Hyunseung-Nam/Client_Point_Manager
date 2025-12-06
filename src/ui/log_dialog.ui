@@ -55,7 +55,7 @@
     </font>
    </property>
    <property name="text">
-    <string>리워드 지급 내역</string>
+    <string>포인트 지급 내역</string>
    </property>
   </widget>
   <widget class="QTableWidget" name="tableLogs">
@@ -127,7 +127,7 @@ QWidget#centralwidget {
    </column>
    <column>
     <property name="text">
-     <string>리워드</string>
+     <string>포인트</string>
     </property>
    </column>
    <column>

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'input_dialogSNhjri.ui'
+## Form generated from reading UI file 'input_dialogMRTaSy.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -81,7 +81,7 @@ class Ui_InputDialog(object):
         self.label_3.setFont(font1)
         self.spinLaundry = QSpinBox(InputDialog)
         self.spinLaundry.setObjectName(u"spinLaundry")
-        self.spinLaundry.setGeometry(QRect(90, 110, 69, 23))
+        self.spinLaundry.setGeometry(QRect(100, 110, 69, 23))
         self.spinLaundry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -111,7 +111,7 @@ class Ui_InputDialog(object):
         self.label_2.setFont(font1)
         self.spinDry = QSpinBox(InputDialog)
         self.spinDry.setObjectName(u"spinDry")
-        self.spinDry.setGeometry(QRect(90, 150, 69, 23))
+        self.spinDry.setGeometry(QRect(100, 150, 69, 23))
         self.spinDry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -199,8 +199,8 @@ class Ui_InputDialog(object):
         self.label_5.setText(QCoreApplication.translate("InputDialog", u"\uc2e0\uaddc \uc0ac\uc6a9\uc790 \ub4f1\ub85d", None))
         self.label.setText(QCoreApplication.translate("InputDialog", u"\uc804\ud654\ubc88\ud638", None))
         self.inputPhone.setPlaceholderText(QCoreApplication.translate("InputDialog", u"\uc804\ud654\ubc88\ud638\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694", None))
-        self.label_3.setText(QCoreApplication.translate("InputDialog", u"\uc791\uc5c51 \ud69f\uc218", None))
-        self.label_2.setText(QCoreApplication.translate("InputDialog", u"\uc791\uc5c52 \ud69f\uc218", None))
+        self.label_3.setText(QCoreApplication.translate("InputDialog", u"\ud65c\ub3d9 A \ud69f\uc218", None))
+        self.label_2.setText(QCoreApplication.translate("InputDialog", u"\ud65c\ub3d9 B \ud69f\uc218", None))
         self.btnSubmit.setText(QCoreApplication.translate("InputDialog", u"\ucd94\uac00", None))
         self.btnCancel.setText(QCoreApplication.translate("InputDialog", u"\ucde8\uc18c", None))
     # retranslateUi

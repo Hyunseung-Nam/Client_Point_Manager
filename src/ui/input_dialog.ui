@@ -137,13 +137,13 @@ QLineEdit:placeholder {
     </font>
    </property>
    <property name="text">
-    <string>작업1 횟수</string>
+    <string>활동 A 횟수</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinLaundry">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>100</x>
      <y>110</y>
      <width>69</width>
      <height>23</height>
@@ -193,13 +193,13 @@ QSpinBox {
     </font>
    </property>
    <property name="text">
-    <string>작업2 횟수</string>
+    <string>활동 B 횟수</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinDry">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>100</x>
      <y>150</y>
      <width>69</width>
      <height>23</height>

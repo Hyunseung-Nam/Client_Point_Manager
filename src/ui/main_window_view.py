@@ -14,11 +14,13 @@ class MainWindow(QMainWindow):
         # UI 로드
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        # 행 번호 숨기기
+        self.ui.tableWidget.verticalHeader().setVisible(False)
         # 창 크기 고정
         self.setFixedSize(1053, 691)
         self.apply_column_ratio()
         # 창 제목 설정
-        self.setWindowTitle("사용자 관리 시스템")
+        self.setWindowTitle("사용자 포인트 관리 프로그램")
         
     # =========================================================
     # Controller가 명령하는 메서드

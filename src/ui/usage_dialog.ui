@@ -34,7 +34,7 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>70</x>
      <y>20</y>
      <width>161</width>
      <height>21</height>
@@ -48,13 +48,13 @@
     </font>
    </property>
    <property name="text">
-    <string>이용 추가</string>
+    <string>활동 횟수 추가</string>
    </property>
   </widget>
   <widget class="QSpinBox" name="spinLaundry">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>100</x>
      <y>70</y>
      <width>69</width>
      <height>23</height>
@@ -91,7 +91,7 @@ QSpinBox {
   <widget class="QSpinBox" name="spinDry">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>100</x>
      <y>120</y>
      <width>69</width>
      <height>23</height>
@@ -128,7 +128,7 @@ QSpinBox {
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>60</y>
      <width>71</width>
      <height>41</height>
@@ -141,13 +141,13 @@ QSpinBox {
     </font>
    </property>
    <property name="text">
-    <string>작업1 횟수</string>
+    <string>활동 A 횟수</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>110</y>
      <width>71</width>
      <height>41</height>
@@ -160,7 +160,7 @@ QSpinBox {
     </font>
    </property>
    <property name="text">
-    <string>작업2 횟수</string>
+    <string>활동 B 횟수</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btnSubmit">
@@ -203,7 +203,7 @@ QPushButton:pressed {
   <widget class="QPushButton" name="btnCancel">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>130</x>
      <y>170</y>
      <width>81</width>
      <height>31</height>

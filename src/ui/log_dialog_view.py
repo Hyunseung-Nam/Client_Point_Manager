@@ -1,6 +1,6 @@
 # ui/log_dialog_view.py
 
-from PySide6.QtWidgets import QDialog, QTableWidgetItem
+from PySide6.QtWidgets import QDialog, QTableWidgetItem, QAbstractItemView
 from PySide6.QtWidgets import QHeaderView
 from .ui_log_dialog import Ui_LogDialog
 from modules.storage import load_logs
@@ -13,10 +13,11 @@ class LogDialog(QDialog):
 
         self.ui = Ui_LogDialog()
         self.ui.setupUi(self)
-        
+        self.ui.tableLogs.verticalHeader().setVisible(False)
         self.setFixedSize(780, 350)
-        
         self.setWindowTitle("포인트 지급 내역")
+        # 셀 편집 불가 설정
+        self.ui.tableLogs.setEditTriggers(QAbstractItemView.NoEditTriggers)
 
         # 버튼 연결
         self.ui.btnClose.clicked.connect(self.reject)

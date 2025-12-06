@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowuJpxZS.ui'
+## Form generated from reading UI file 'main_windowKXahAk.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -85,7 +85,7 @@ class Ui_MainWindow(object):
 "")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(470, 10, 331, 31))
+        self.label.setGeometry(QRect(410, 10, 331, 31))
         font2 = QFont()
         font2.setFamilies([u"Noto Sans KR"])
         font2.setPointSize(15)
@@ -292,28 +292,28 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.btnAddCustomer.setText(QCoreApplication.translate("MainWindow", u"\uc2e0\uaddc \uc0ac\uc6a9\uc790 \ub4f1\ub85d", None))
         self.btnOpenLog.setText(QCoreApplication.translate("MainWindow", u"\ub85c\uadf8 \ubcf4\uae30", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"\ubcf4\uc0c1 \uad00\ub9ac \uc2dc\uc2a4\ud15c", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"\uc0ac\uc6a9\uc790 \ud3ec\uc778\ud2b8 \uad00\ub9ac \ud504\ub85c\uadf8\ub7a8", None))
         self.searchInput.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\uc804\ud654\ubc88\ud638\ub97c \uc785\ub825\ud574\uc8fc\uc138\uc694", None))
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"\uc120\ud0dd", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
         ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\uc804\ud654\ubc88\ud638", None));
         ___qtablewidgetitem2 = self.tableWidget.horizontalHeaderItem(2)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"\uc791\uc5c51", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"\ud65c\ub3d9 A", None));
         ___qtablewidgetitem3 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"\uc791\uc5c52", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"\ud65c\ub3d9 B", None));
         ___qtablewidgetitem4 = self.tableWidget.horizontalHeaderItem(4)
         ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"\ud569\uacc4", None));
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
-        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"\ub9ac\uc6cc\ub4dc \ud544\uc694", None));
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"\ud3ec\uc778\ud2b8 \uc9c0\uae09 \ud544\uc694", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"\ub0a8\uc740 \ud69f\uc218", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"\ucd1d \ub9ac\uc6cc\ub4dc", None));
-        self.btnGivePoints.setText(QCoreApplication.translate("MainWindow", u"\ub9ac\uc6cc\ub4dc \uc9c0\uae09", None))
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"\ucd1d \ud3ec\uc778\ud2b8", None));
+        self.btnGivePoints.setText(QCoreApplication.translate("MainWindow", u"\ud3ec\uc778\ud2b8 \uc9c0\uae09", None))
         self.btnSearch.setText(QCoreApplication.translate("MainWindow", u"\uac80\uc0c9", None))
         self.btnRefresh.setText(QCoreApplication.translate("MainWindow", u"\uc0c8\ub85c \uace0\uce68", None))
-        self.btnAddUsage.setText(QCoreApplication.translate("MainWindow", u"\uc791\uc5c5 \ud69f\uc218 \ucd94\uac00", None))
+        self.btnAddUsage.setText(QCoreApplication.translate("MainWindow", u"\ud65c\ub3d9 \ud69f\uc218 \ucd94\uac00", None))
         self.btnDeleteCustomer.setText(QCoreApplication.translate("MainWindow", u"\uc0ac\uc6a9\uc790 \uc0ad\uc81c", None))
     # retranslateUi
 

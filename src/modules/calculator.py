@@ -11,7 +11,7 @@ def add_usage(users, phone, process1, process2):
 
 def apply_reward(user_data, points:int):
     """
-    사용자 데이터의 작업 횟수를 초기화하고 리워드를 업데이트
+    사용자 데이터의 작업 횟수를 초기화하고 포인트를 업데이트
     """
     process1 = user_data.get('process1', 0)
     process2 = user_data.get('process2', 0)
@@ -26,7 +26,7 @@ def apply_reward(user_data, points:int):
     user_data['process2'] = 0
 
 def check_reward_needed(total_counts):
-    """리워드 지급 필요 여부 확인 (10회 기준)"""
+    """포인트 지급 필요 여부 확인 (10회 기준)"""
     return total_counts >= COUNTS_FOR_REWARD
 
 def format_phone(phone: str) -> str:
@@ -45,7 +45,7 @@ def normalize_phone(phone: str) -> str:
 # 백업을 위한 함수
 # =======================================
 def get_total_points(phone):
-    """사용자의 누적 리워드를 계산 (Model/calculator 책임)"""
+    """사용자의 누적 포인트를 계산 (Model/calculator 책임)"""
     from .storage import load_logs 
     logs = load_logs()
     total_points = 0

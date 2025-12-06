@@ -121,7 +121,7 @@ QPushButton:pressed {
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>470</x>
+      <x>410</x>
       <y>10</y>
       <width>331</width>
       <height>31</height>
@@ -141,7 +141,7 @@ QPushButton:pressed {
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>보상 관리 시스템</string>
+     <string>사용자 포인트 관리 프로그램</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="searchInput">
@@ -240,12 +240,12 @@ QTableWidget::item:focus {
     </column>
     <column>
      <property name="text">
-      <string>작업1</string>
+      <string>활동 A</string>
      </property>
     </column>
     <column>
      <property name="text">
-      <string>작업2</string>
+      <string>활동 B</string>
      </property>
     </column>
     <column>
@@ -255,7 +255,7 @@ QTableWidget::item:focus {
     </column>
     <column>
      <property name="text">
-      <string>리워드 필요</string>
+      <string>포인트 지급 필요</string>
      </property>
     </column>
     <column>
@@ -265,7 +265,7 @@ QTableWidget::item:focus {
     </column>
     <column>
      <property name="text">
-      <string>총 리워드</string>
+      <string>총 포인트</string>
      </property>
     </column>
    </widget>
@@ -304,7 +304,7 @@ QPushButton:pressed {
 </string>
     </property>
     <property name="text">
-     <string>리워드 지급</string>
+     <string>포인트 지급</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnSearch">
@@ -415,7 +415,7 @@ QPushButton:pressed {
 </string>
     </property>
     <property name="text">
-     <string>작업 횟수 추가</string>
+     <string>활동 횟수 추가</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnDeleteCustomer">

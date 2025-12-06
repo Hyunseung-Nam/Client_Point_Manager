@@ -11,7 +11,7 @@ class UsageDialog(QDialog):
         
         self.setFixedSize(236, 227)
         
-        self.setWindowTitle("고객 이용 정보 입력")
+        self.setWindowTitle("활동 횟수 추가")
         
         # 버튼 연결
         self.ui.btnSubmit.clicked.connect(self.handle_submit)
