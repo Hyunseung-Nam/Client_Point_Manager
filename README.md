@@ -24,7 +24,7 @@ SRP/OOP 원칙과 MVC 구조를 적용하여 **역할을 명확히 분리**하�
 ---
 
 ## 설치 및 실행
-\`\`\`bash
+```bash
 1. 레포지토리 복사
 git clone https://github.com/Hyunseung-Nam/Client_Point_Manager.git
 cd Client_Point_Manager
@@ -38,15 +38,16 @@ source .venv/bin/activate    # Mac/Linux
 pip install -r requirements.txt
 
 4. 실행
-python src/main.py
-\`\`\`
+python main.py
+```
 
 실행 후 `data/users.json`, `data/history.json` 파일이 자동 생성되며 데이터 저장소로 사용됩니다.
 
 ---
 
 ## 폴더 구조
-```bash
+
+\`\`\`
 src/
  ├─ main.py                  # 앱 진입점, Qt 이벤트 루프 시작
  ├─ modules/
@@ -63,7 +64,7 @@ src/
      ├─ log_dialog_view.py       # 포인트 지급 로그 Dialog
      ├─ ui_*.py                  # Qt Designer 자동 생성 코드
      └─ *.ui                     # Qt Designer 원본 UI 파일
-```
+\`\`\`
 
 ---
 
