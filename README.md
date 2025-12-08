@@ -47,7 +47,7 @@ python main.py
 
 ## 폴더 구조
 
-\`\`\`
+```bash
 src/
  ├─ main.py                  # 앱 진입점, Qt 이벤트 루프 시작
  ├─ modules/
@@ -64,7 +64,7 @@ src/
      ├─ log_dialog_view.py       # 포인트 지급 로그 Dialog
      ├─ ui_*.py                  # Qt Designer 자동 생성 코드
      └─ *.ui                     # Qt Designer 원본 UI 파일
-\`\`\`
+```
 
 ---
 
