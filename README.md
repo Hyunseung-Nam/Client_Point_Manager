@@ -38,7 +38,7 @@ source .venv/bin/activate    # Mac/Linux
 pip install -r requirements.txt
 
 4. 실행
-python main.py
+python src/main.py
 ```
 
 실행 후 `data/users.json`, `data/history.json` 파일이 자동 생성되며 데이터 저장소로 사용됩니다.
