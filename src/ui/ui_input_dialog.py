@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'input_dialogMRTaSy.ui'
+## Form generated from reading UI file 'input_dialogjFQmSa.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -24,7 +24,7 @@ class Ui_InputDialog(object):
     def setupUi(self, InputDialog):
         if not InputDialog.objectName():
             InputDialog.setObjectName(u"InputDialog")
-        InputDialog.resize(339, 277)
+        InputDialog.resize(348, 330)
         self.buttonBox = QDialogButtonBox(InputDialog)
         self.buttonBox.setObjectName(u"buttonBox")
         self.buttonBox.setGeometry(QRect(30, 240, 341, 32))
@@ -41,24 +41,26 @@ class Ui_InputDialog(object):
 "}")
         self.label_5 = QLabel(InputDialog)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(110, 20, 161, 21))
+        self.label_5.setGeometry(QRect(110, 30, 161, 21))
         font = QFont()
         font.setFamilies([u"Noto Sans KR"])
-        font.setPointSize(12)
+        font.setPointSize(14)
         font.setBold(True)
         self.label_5.setFont(font)
         self.label = QLabel(InputDialog)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(30, 50, 71, 51))
+        self.label.setGeometry(QRect(30, 80, 71, 51))
         font1 = QFont()
         font1.setFamilies([u"Noto Sans KR"])
-        font1.setBold(True)
+        font1.setPointSize(11)
+        font1.setBold(False)
         self.label.setFont(font1)
         self.inputPhone = QLineEdit(InputDialog)
         self.inputPhone.setObjectName(u"inputPhone")
-        self.inputPhone.setGeometry(QRect(90, 60, 211, 31))
+        self.inputPhone.setGeometry(QRect(110, 90, 211, 31))
         font2 = QFont()
         font2.setFamilies([u"Noto Sans KR"])
+        font2.setPointSize(11)
         self.inputPhone.setFont(font2)
         self.inputPhone.setStyleSheet(u"QLineEdit {\n"
 "    background-color: white;\n"
@@ -77,11 +79,14 @@ class Ui_InputDialog(object):
 "}")
         self.label_3 = QLabel(InputDialog)
         self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(30, 100, 71, 41))
+        self.label_3.setGeometry(QRect(30, 130, 71, 51))
         self.label_3.setFont(font1)
         self.spinLaundry = QSpinBox(InputDialog)
         self.spinLaundry.setObjectName(u"spinLaundry")
-        self.spinLaundry.setGeometry(QRect(100, 110, 69, 23))
+        self.spinLaundry.setGeometry(QRect(110, 140, 81, 31))
+        font3 = QFont()
+        font3.setPointSize(11)
+        self.spinLaundry.setFont(font3)
         self.spinLaundry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -107,11 +112,56 @@ class Ui_InputDialog(object):
         self.spinLaundry.setMaximum(20)
         self.label_2 = QLabel(InputDialog)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(30, 140, 71, 41))
+        self.label_2.setGeometry(QRect(30, 180, 71, 51))
         self.label_2.setFont(font1)
+        self.btnSubmit = QPushButton(InputDialog)
+        self.btnSubmit.setObjectName(u"btnSubmit")
+        self.btnSubmit.setGeometry(QRect(30, 260, 131, 31))
+        font4 = QFont()
+        font4.setFamilies([u"Noto Sans KR"])
+        font4.setPointSize(11)
+        font4.setBold(True)
+        self.btnSubmit.setFont(font4)
+        self.btnSubmit.setStyleSheet(u"QPushButton {\n"
+"    background-color: #4b7bec;\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #3867d6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #2d5dc0;\n"
+"}\n"
+"")
+        self.btnCancel = QPushButton(InputDialog)
+        self.btnCancel.setObjectName(u"btnCancel")
+        self.btnCancel.setGeometry(QRect(180, 260, 131, 31))
+        self.btnCancel.setFont(font4)
+        self.btnCancel.setStyleSheet(u"QPushButton {\n"
+"    background-color: #4b7bec;\n"
+"    color: white;\n"
+"    border-radius: 8px;\n"
+"    padding: 6px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #3867d6;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #2d5dc0;\n"
+"}\n"
+"")
         self.spinDry = QSpinBox(InputDialog)
         self.spinDry.setObjectName(u"spinDry")
-        self.spinDry.setGeometry(QRect(100, 150, 69, 23))
+        self.spinDry.setGeometry(QRect(110, 190, 81, 31))
+        self.spinDry.setFont(font3)
         self.spinDry.setStyleSheet(u"QSpinBox {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -146,46 +196,6 @@ class Ui_InputDialog(object):
 "\n"
 "")
         self.spinDry.setMaximum(20)
-        self.btnSubmit = QPushButton(InputDialog)
-        self.btnSubmit.setObjectName(u"btnSubmit")
-        self.btnSubmit.setGeometry(QRect(70, 210, 101, 31))
-        self.btnSubmit.setFont(font1)
-        self.btnSubmit.setStyleSheet(u"QPushButton {\n"
-"    background-color: #4b7bec;\n"
-"    color: white;\n"
-"    border-radius: 8px;\n"
-"    padding: 6px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #3867d6;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #2d5dc0;\n"
-"}\n"
-"")
-        self.btnCancel = QPushButton(InputDialog)
-        self.btnCancel.setObjectName(u"btnCancel")
-        self.btnCancel.setGeometry(QRect(190, 210, 101, 31))
-        self.btnCancel.setFont(font1)
-        self.btnCancel.setStyleSheet(u"QPushButton {\n"
-"    background-color: #4b7bec;\n"
-"    color: white;\n"
-"    border-radius: 8px;\n"
-"    padding: 6px;\n"
-"    font-weight: bold;\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: #3867d6;\n"
-"}\n"
-"\n"
-"QPushButton:pressed {\n"
-"    background-color: #2d5dc0;\n"
-"}\n"
-"")
 
         self.retranslateUi(InputDialog)
         self.buttonBox.accepted.connect(InputDialog.accept)

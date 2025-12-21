@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1053</width>
-    <height>691</height>
+    <width>1173</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>-10</x>
       <y>-20</y>
-      <width>1061</width>
-      <height>711</height>
+      <width>1191</width>
+      <height>721</height>
      </rect>
     </property>
     <property name="font">
@@ -47,15 +47,16 @@
    <widget class="QPushButton" name="btnAddCustomer">
     <property name="geometry">
      <rect>
-      <x>930</x>
+      <x>1030</x>
       <y>50</y>
-      <width>101</width>
+      <width>121</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -65,7 +66,6 @@
     color: white;
     border-radius: 8px;
     padding: 6px;
-    font-weight: bold;
 }
 
 QPushButton:hover {
@@ -84,16 +84,17 @@ QPushButton:pressed {
    <widget class="QPushButton" name="btnOpenLog">
     <property name="geometry">
      <rect>
-      <x>800</x>
+      <x>880</x>
       <y>570</y>
-      <width>241</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <bold>true</bold>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -102,7 +103,6 @@ QPushButton:pressed {
     color: white;
     border-radius: 8px;
     padding: 6px;
-    font-weight: bold;
 }
 
 QPushButton:hover {
@@ -121,7 +121,7 @@ QPushButton:pressed {
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>410</x>
+      <x>450</x>
       <y>10</y>
       <width>331</width>
       <height>31</height>
@@ -130,7 +130,7 @@ QPushButton:pressed {
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <pointsize>15</pointsize>
+      <pointsize>17</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -149,13 +149,14 @@ QPushButton:pressed {
      <rect>
       <x>30</x>
       <y>50</y>
-      <width>791</width>
+      <width>871</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -180,13 +181,15 @@ QLineEdit:focus {
      <rect>
       <x>30</x>
       <y>90</y>
-      <width>1011</width>
+      <width>1121</width>
       <height>471</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -197,7 +200,7 @@ QLineEdit:focus {
     alternate-background-color: #F7F7F7;
     selection-background-color: #D6E4FF;
     selection-color: #000000;
-    border-radius: 10px;
+    border-radius: 11px;
     padding: 8px;
 }
 
@@ -222,11 +225,17 @@ QTableWidget::item:focus {
     <property name="columnCount">
      <number>8</number>
     </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
     <attribute name="horizontalHeaderDefaultSectionSize">
-     <number>124</number>
+     <number>138</number>
     </attribute>
     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
      <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
     </attribute>
     <column>
      <property name="text">
@@ -274,14 +283,14 @@ QTableWidget::item:focus {
      <rect>
       <x>30</x>
       <y>570</y>
-      <width>511</width>
+      <width>561</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <pointsize>9</pointsize>
+      <pointsize>11</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -310,16 +319,17 @@ QPushButton:pressed {
    <widget class="QPushButton" name="btnSearch">
     <property name="geometry">
      <rect>
-      <x>830</x>
+      <x>910</x>
       <y>50</y>
-      <width>91</width>
+      <width>111</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <bold>true</bold>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
@@ -328,7 +338,6 @@ QPushButton:pressed {
     color: white;
     border-radius: 8px;
     padding: 6px;
-    font-weight: bold;
 }
 
 QPushButton:hover {
@@ -347,16 +356,16 @@ QPushButton:pressed {
    <widget class="QPushButton" name="btnRefresh">
     <property name="geometry">
      <rect>
-      <x>950</x>
+      <x>1060</x>
       <y>10</y>
-      <width>81</width>
-      <height>26</height>
+      <width>91</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <pointsize>9</pointsize>
+      <pointsize>10</pointsize>
       <bold>false</bold>
      </font>
     </property>
@@ -384,15 +393,16 @@ QPushButton#btnRefresh:pressed {
    <widget class="QPushButton" name="btnAddUsage">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>600</x>
       <y>570</y>
-      <width>241</width>
+      <width>271</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -402,7 +412,6 @@ QPushButton#btnRefresh:pressed {
     color: white;
     border-radius: 8px;
     padding: 6px;
-    font-weight: bold;
 }
 
 QPushButton:hover {
@@ -421,16 +430,16 @@ QPushButton:pressed {
    <widget class="QPushButton" name="btnDeleteCustomer">
     <property name="geometry">
      <rect>
-      <x>910</x>
+      <x>1010</x>
       <y>610</y>
-      <width>131</width>
-      <height>21</height>
+      <width>141</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <family>Noto Sans KR</family>
-      <pointsize>6</pointsize>
+      <pointsize>11</pointsize>
       <bold>true</bold>
      </font>
     </property>
@@ -440,7 +449,6 @@ QPushButton:pressed {
     color: white;
     border-radius: 8px;
     padding: 6px;
-    font-weight: bold;
 }
 
 QPushButton:hover {
@@ -462,7 +470,7 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1053</width>
+     <width>1173</width>
      <height>33</height>
     </rect>
    </property>

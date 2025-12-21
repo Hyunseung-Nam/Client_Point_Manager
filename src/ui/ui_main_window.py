@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowKXahAk.ui'
+## Form generated from reading UI file 'main_windowlxDfwx.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -23,12 +23,12 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1053, 691)
+        MainWindow.resize(1173, 700)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.background = QTableWidget(self.centralwidget)
         self.background.setObjectName(u"background")
-        self.background.setGeometry(QRect(-10, -20, 1061, 711))
+        self.background.setGeometry(QRect(-10, -20, 1191, 721))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
         self.background.setFont(font)
@@ -42,9 +42,10 @@ class Ui_MainWindow(object):
         self.background.horizontalHeader().setDefaultSectionSize(107)
         self.btnAddCustomer = QPushButton(self.centralwidget)
         self.btnAddCustomer.setObjectName(u"btnAddCustomer")
-        self.btnAddCustomer.setGeometry(QRect(930, 50, 101, 31))
+        self.btnAddCustomer.setGeometry(QRect(1030, 50, 121, 31))
         font1 = QFont()
         font1.setFamilies([u"Noto Sans KR"])
+        font1.setPointSize(11)
         font1.setBold(True)
         self.btnAddCustomer.setFont(font1)
         self.btnAddCustomer.setStyleSheet(u"QPushButton {\n"
@@ -52,7 +53,6 @@ class Ui_MainWindow(object):
 "    color: white;\n"
 "    border-radius: 8px;\n"
 "    padding: 6px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -65,14 +65,17 @@ class Ui_MainWindow(object):
 "")
         self.btnOpenLog = QPushButton(self.centralwidget)
         self.btnOpenLog.setObjectName(u"btnOpenLog")
-        self.btnOpenLog.setGeometry(QRect(800, 570, 241, 31))
-        self.btnOpenLog.setFont(font1)
+        self.btnOpenLog.setGeometry(QRect(880, 570, 271, 31))
+        font2 = QFont()
+        font2.setFamilies([u"Noto Sans KR"])
+        font2.setPointSize(11)
+        font2.setBold(False)
+        self.btnOpenLog.setFont(font2)
         self.btnOpenLog.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4b7bec;\n"
 "    color: white;\n"
 "    border-radius: 8px;\n"
 "    padding: 6px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -85,20 +88,21 @@ class Ui_MainWindow(object):
 "")
         self.label = QLabel(self.centralwidget)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(410, 10, 331, 31))
-        font2 = QFont()
-        font2.setFamilies([u"Noto Sans KR"])
-        font2.setPointSize(15)
-        font2.setBold(True)
-        self.label.setFont(font2)
+        self.label.setGeometry(QRect(450, 10, 331, 31))
+        font3 = QFont()
+        font3.setFamilies([u"Noto Sans KR"])
+        font3.setPointSize(17)
+        font3.setBold(True)
+        self.label.setFont(font3)
         self.label.setMouseTracking(False)
         self.label.setTabletTracking(False)
         self.searchInput = QLineEdit(self.centralwidget)
         self.searchInput.setObjectName(u"searchInput")
-        self.searchInput.setGeometry(QRect(30, 50, 791, 31))
-        font3 = QFont()
-        font3.setFamilies([u"Noto Sans KR"])
-        self.searchInput.setFont(font3)
+        self.searchInput.setGeometry(QRect(30, 50, 871, 31))
+        font4 = QFont()
+        font4.setFamilies([u"Noto Sans KR"])
+        font4.setPointSize(11)
+        self.searchInput.setFont(font4)
         self.searchInput.setStyleSheet(u"QLineEdit {\n"
 "    background-color: white;\n"
 "    border: 1px solid #dcdde1;\n"
@@ -130,8 +134,8 @@ class Ui_MainWindow(object):
         __qtablewidgetitem7 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setGeometry(QRect(30, 90, 1011, 471))
-        self.tableWidget.setFont(font3)
+        self.tableWidget.setGeometry(QRect(30, 90, 1121, 471))
+        self.tableWidget.setFont(font2)
         self.tableWidget.setStyleSheet(u"QTableWidget#tableWidget {\n"
 "    background: white;\n"
 "    border: 1px solid #E0E0E0;\n"
@@ -139,7 +143,7 @@ class Ui_MainWindow(object):
 "    alternate-background-color: #F7F7F7;\n"
 "    selection-background-color: #D6E4FF;\n"
 "    selection-color: #000000;\n"
-"    border-radius: 10px;\n"
+"    border-radius: 11px;\n"
 "    padding: 8px;\n"
 "}\n"
 "\n"
@@ -161,16 +165,14 @@ class Ui_MainWindow(object):
 "    border: none;\n"
 "}")
         self.tableWidget.setColumnCount(8)
-        self.tableWidget.horizontalHeader().setDefaultSectionSize(124)
+        self.tableWidget.horizontalHeader().setCascadingSectionResizes(False)
+        self.tableWidget.horizontalHeader().setDefaultSectionSize(138)
         self.tableWidget.horizontalHeader().setProperty(u"showSortIndicator", False)
+        self.tableWidget.verticalHeader().setVisible(True)
         self.btnGivePoints = QPushButton(self.centralwidget)
         self.btnGivePoints.setObjectName(u"btnGivePoints")
-        self.btnGivePoints.setGeometry(QRect(30, 570, 511, 31))
-        font4 = QFont()
-        font4.setFamilies([u"Noto Sans KR"])
-        font4.setPointSize(9)
-        font4.setBold(True)
-        self.btnGivePoints.setFont(font4)
+        self.btnGivePoints.setGeometry(QRect(30, 570, 561, 31))
+        self.btnGivePoints.setFont(font1)
         self.btnGivePoints.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4b7bec;\n"
 "    color: white;\n"
@@ -189,14 +191,13 @@ class Ui_MainWindow(object):
 "")
         self.btnSearch = QPushButton(self.centralwidget)
         self.btnSearch.setObjectName(u"btnSearch")
-        self.btnSearch.setGeometry(QRect(830, 50, 91, 31))
-        self.btnSearch.setFont(font1)
+        self.btnSearch.setGeometry(QRect(910, 50, 111, 31))
+        self.btnSearch.setFont(font2)
         self.btnSearch.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4b7bec;\n"
 "    color: white;\n"
 "    border-radius: 8px;\n"
 "    padding: 6px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -209,10 +210,10 @@ class Ui_MainWindow(object):
 "")
         self.btnRefresh = QPushButton(self.centralwidget)
         self.btnRefresh.setObjectName(u"btnRefresh")
-        self.btnRefresh.setGeometry(QRect(950, 10, 81, 26))
+        self.btnRefresh.setGeometry(QRect(1060, 10, 91, 31))
         font5 = QFont()
         font5.setFamilies([u"Noto Sans KR"])
-        font5.setPointSize(9)
+        font5.setPointSize(10)
         font5.setBold(False)
         self.btnRefresh.setFont(font5)
         self.btnRefresh.setStyleSheet(u"QPushButton#btnRefresh {\n"
@@ -232,14 +233,13 @@ class Ui_MainWindow(object):
 "}")
         self.btnAddUsage = QPushButton(self.centralwidget)
         self.btnAddUsage.setObjectName(u"btnAddUsage")
-        self.btnAddUsage.setGeometry(QRect(550, 570, 241, 31))
+        self.btnAddUsage.setGeometry(QRect(600, 570, 271, 31))
         self.btnAddUsage.setFont(font1)
         self.btnAddUsage.setStyleSheet(u"QPushButton {\n"
 "    background-color: #4b7bec;\n"
 "    color: white;\n"
 "    border-radius: 8px;\n"
 "    padding: 6px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -252,18 +252,13 @@ class Ui_MainWindow(object):
 "")
         self.btnDeleteCustomer = QPushButton(self.centralwidget)
         self.btnDeleteCustomer.setObjectName(u"btnDeleteCustomer")
-        self.btnDeleteCustomer.setGeometry(QRect(910, 610, 131, 21))
-        font6 = QFont()
-        font6.setFamilies([u"Noto Sans KR"])
-        font6.setPointSize(6)
-        font6.setBold(True)
-        self.btnDeleteCustomer.setFont(font6)
+        self.btnDeleteCustomer.setGeometry(QRect(1010, 610, 141, 31))
+        self.btnDeleteCustomer.setFont(font1)
         self.btnDeleteCustomer.setStyleSheet(u"QPushButton {\n"
 "    background-color: #C62828;\n"
 "    color: white;\n"
 "    border-radius: 8px;\n"
 "    padding: 6px;\n"
-"    font-weight: bold;\n"
 "}\n"
 "\n"
 "QPushButton:hover {\n"
@@ -277,7 +272,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 1053, 33))
+        self.menubar.setGeometry(QRect(0, 0, 1173, 33))
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")

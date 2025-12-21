@@ -6,20 +6,25 @@
 # --------------------------------------------------
 def validate_phone(phone: str) -> bool:
     """
-    전화번호 형식 검증 (01012345678 형태)
+    전화번호 형식 검증
+    - 01012345678
+    - 010-1234-5678
     """
     if not phone:
         return False
 
+    # '-'가 포함된 경우 제거
+    cleaned = phone.replace("-", "")
+
     # 숫자만 / 10~11자리 허용
-    if not phone.isdigit():
+    if not cleaned.isdigit():
         return False
 
-    if len(phone) not in (10, 11):
+    if len(cleaned) not in (10, 11):
         return False
 
     # 선택적으로 01X 로 시작하는지 체크
-    if not phone.startswith("01"):
+    if not cleaned.startswith("01"):
         return False
 
     return True

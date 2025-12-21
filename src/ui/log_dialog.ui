@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>780</width>
-    <height>350</height>
+    <width>860</width>
+    <height>399</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,8 +18,8 @@
     <rect>
      <x>-40</x>
      <y>-50</y>
-     <width>841</width>
-     <height>411</height>
+     <width>911</width>
+     <height>461</height>
     </rect>
    </property>
    <property name="font">
@@ -41,7 +41,7 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>370</x>
      <y>10</y>
      <width>221</width>
      <height>31</height>
@@ -50,7 +50,7 @@
    <property name="font">
     <font>
      <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
+     <pointsize>14</pointsize>
      <bold>true</bold>
     </font>
    </property>
@@ -63,13 +63,15 @@
     <rect>
      <x>20</x>
      <y>50</y>
-     <width>741</width>
-     <height>251</height>
+     <width>821</width>
+     <height>291</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Noto Sans KR</family>
+     <pointsize>11</pointsize>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -89,7 +91,7 @@ QHeaderView::section {
     background-color: #F0F0F0;
     padding: 6px;
     border: 0px;
-    font-weight: bold;
+	font-size: 12px;
     color: #444;
 }
 
@@ -102,10 +104,10 @@ QWidget#centralwidget {
 }</string>
    </property>
    <property name="columnCount">
-    <number>5</number>
+    <number>6</number>
    </property>
    <attribute name="horizontalHeaderDefaultSectionSize">
-    <number>144</number>
+    <number>134</number>
    </attribute>
    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
     <bool>false</bool>
@@ -132,6 +134,11 @@ QWidget#centralwidget {
    </column>
    <column>
     <property name="text">
+     <string>처리 내역</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
      <string>지급 사유</string>
     </property>
    </column>
@@ -140,14 +147,15 @@ QWidget#centralwidget {
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>310</y>
-     <width>741</width>
+     <y>350</y>
+     <width>821</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Noto Sans KR</family>
+     <pointsize>11</pointsize>
      <bold>true</bold>
     </font>
    </property>

@@ -17,7 +17,7 @@ class MainWindow(QMainWindow):
         # 행 번호 숨기기
         self.ui.tableWidget.verticalHeader().setVisible(False)
         # 창 크기 고정
-        self.setFixedSize(1053, 691)
+        self.setFixedSize(1173, 700)
         self.apply_column_ratio()
         # 창 제목 설정
         self.setWindowTitle("사용자 포인트 관리 프로그램")
@@ -60,7 +60,7 @@ class MainWindow(QMainWindow):
         
         return search_input.text().strip()
         
-    def render_customer_list(self, data_list):
+    def render_user_list(self, data_list):
         """
         [Controller 명령 실행] Controller가 준비한 데이터를 받아 테이블에 표시
         (Controller가 이 함수를 호출할 때, 테이블 조작 로직이 시작됨)
@@ -69,7 +69,7 @@ class MainWindow(QMainWindow):
         data_list (List[Dict]): 고객 정보가 담긴 딕셔너리 리스트.
             각 딕셔너리는 다음 키를 반드시 포함해야 합니다:
             - 'phone': 전화번호 (str)
-            - 'process1', 'process2': 작업 완료 횟수 (int)
+            - 'activity_1', 'activity_2': 작업 완료 횟수 (int)
             - 'total_counts': 총 횟수 (int)
             - 'reward_needed': 보상 필요 여부 (bool)
             - 'remaining': 잔여 횟수 (int)
@@ -95,12 +95,19 @@ class MainWindow(QMainWindow):
 
             table.setItem(row, 0, chk_item) # 체크박스
             table.setItem(row, 1, self._item(str(format_phone(row_data['phone']))))
-            table.setItem(row, 2, self._item(str(row_data['process1'])))
-            table.setItem(row, 3, self._item(str(row_data['process2'])))
+            table.setItem(row, 2, self._item(str(row_data['activity_1'])))
+            table.setItem(row, 3, self._item(str(row_data['activity_2'])))
             table.setItem(row, 4, self._item(str(row_data['total_counts'])))
             table.setItem(row, 5, reward_item)
             table.setItem(row, 6, self._item(str(row_data['remaining'])))
             table.setItem(row, 7, self._item(str(row_data['total_points'])))
+            
+    def set_reward_button_enabled(self, enabled: bool):
+        """
+        포인트 지급 버튼 활성/비활성 제어
+        (중복 클릭 방지용)
+        """
+        self.ui.btnGivePoints.setEnabled(enabled)
         
     # -------------------------------------------
     # 메시지 팝업 실행 (view의 책임을 message_utils에 위임)

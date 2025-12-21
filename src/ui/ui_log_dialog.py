@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'log_dialogLAHPzS.ui'
+## Form generated from reading UI file 'log_dialogeAieuT.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -23,10 +23,10 @@ class Ui_LogDialog(object):
     def setupUi(self, LogDialog):
         if not LogDialog.objectName():
             LogDialog.setObjectName(u"LogDialog")
-        LogDialog.resize(780, 350)
+        LogDialog.resize(860, 399)
         self.tableWidget = QTableWidget(LogDialog)
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setGeometry(QRect(-40, -50, 841, 411))
+        self.tableWidget.setGeometry(QRect(-40, -50, 911, 461))
         font = QFont()
         font.setFamilies([u"Segoe UI"])
         font.setBold(False)
@@ -39,15 +39,15 @@ class Ui_LogDialog(object):
 "}")
         self.label_5 = QLabel(LogDialog)
         self.label_5.setObjectName(u"label_5")
-        self.label_5.setGeometry(QRect(330, 10, 221, 31))
+        self.label_5.setGeometry(QRect(370, 10, 221, 31))
         font1 = QFont()
         font1.setFamilies([u"Noto Sans KR"])
-        font1.setPointSize(11)
+        font1.setPointSize(14)
         font1.setBold(True)
         self.label_5.setFont(font1)
         self.tableLogs = QTableWidget(LogDialog)
-        if (self.tableLogs.columnCount() < 5):
-            self.tableLogs.setColumnCount(5)
+        if (self.tableLogs.columnCount() < 6):
+            self.tableLogs.setColumnCount(6)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableLogs.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -58,10 +58,14 @@ class Ui_LogDialog(object):
         self.tableLogs.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
         self.tableLogs.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.tableLogs.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         self.tableLogs.setObjectName(u"tableLogs")
-        self.tableLogs.setGeometry(QRect(20, 50, 741, 251))
+        self.tableLogs.setGeometry(QRect(20, 50, 821, 291))
         font2 = QFont()
         font2.setFamilies([u"Noto Sans KR"])
+        font2.setPointSize(11)
+        font2.setBold(False)
         self.tableLogs.setFont(font2)
         self.tableLogs.setStyleSheet(u"QTableWidget {\n"
 "    background: white;\n"
@@ -79,7 +83,7 @@ class Ui_LogDialog(object):
 "    background-color: #F0F0F0;\n"
 "    padding: 6px;\n"
 "    border: 0px;\n"
-"    font-weight: bold;\n"
+"	font-size: 12px;\n"
 "    color: #444;\n"
 "}\n"
 "\n"
@@ -90,14 +94,15 @@ class Ui_LogDialog(object):
 "QWidget#centralwidget {\n"
 "    background-color: #F2F2F2;\n"
 "}")
-        self.tableLogs.setColumnCount(5)
-        self.tableLogs.horizontalHeader().setDefaultSectionSize(144)
+        self.tableLogs.setColumnCount(6)
+        self.tableLogs.horizontalHeader().setDefaultSectionSize(134)
         self.tableLogs.horizontalHeader().setProperty(u"showSortIndicator", False)
         self.btnClose = QPushButton(LogDialog)
         self.btnClose.setObjectName(u"btnClose")
-        self.btnClose.setGeometry(QRect(20, 310, 741, 31))
+        self.btnClose.setGeometry(QRect(20, 350, 821, 31))
         font3 = QFont()
         font3.setFamilies([u"Noto Sans KR"])
+        font3.setPointSize(11)
         font3.setBold(True)
         self.btnClose.setFont(font3)
         self.btnClose.setStyleSheet(u"QPushButton {\n"
@@ -134,7 +139,9 @@ class Ui_LogDialog(object):
         ___qtablewidgetitem3 = self.tableLogs.horizontalHeaderItem(3)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("LogDialog", u"\ud3ec\uc778\ud2b8", None));
         ___qtablewidgetitem4 = self.tableLogs.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("LogDialog", u"\uc9c0\uae09 \uc0ac\uc720", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("LogDialog", u"\ucc98\ub9ac \ub0b4\uc5ed", None));
+        ___qtablewidgetitem5 = self.tableLogs.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("LogDialog", u"\uc9c0\uae09 \uc0ac\uc720", None));
         self.btnClose.setText(QCoreApplication.translate("LogDialog", u"\ub2eb\uae30", None))
     # retranslateUi
 

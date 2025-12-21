@@ -13,7 +13,7 @@ class InputDialog(QDialog):
         self.ui = Ui_InputDialog()
         self.ui.setupUi(self)
         
-        self.setFixedSize(339, 277)
+        self.setFixedSize(348, 330)
         
         self.setWindowTitle("사용자 이용 정보 입력")
 

@@ -9,7 +9,7 @@ class UsageDialog(QDialog):
         self.ui = Ui_UsageDialog()
         self.ui.setupUi(self)
         
-        self.setFixedSize(236, 227)
+        self.setFixedSize(295, 283)
         
         self.setWindowTitle("활동 횟수 추가")
         
