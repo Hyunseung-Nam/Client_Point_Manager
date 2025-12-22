@@ -1,24 +1,14 @@
 # modules/storage.py
 
-import json, os, shutil, sys, logging
+import json, os, shutil, logging
 from pathlib import Path
 from datetime import datetime
 from .validator import validate_phone
 from .calculator import normalize_phone
+from .pathutils import app_dir
 
 logger = logging.getLogger(__name__)
     
-def find_project_root(start: Path) -> Path:
-    for p in [start, *start.parents]:
-        if (p / "README.md").exists() or (p / ".gitignore").exists() or (p / "requirements.txt").exists():
-            return p
-    return start.parents[0]
-
-def app_dir() -> Path:
-    if getattr(sys, "frozen", False):
-        return Path(sys.executable).resolve().parent  # exe 있는 폴더
-    return find_project_root(Path(__file__).resolve()) # 프로젝트 폴더
-
 BASE = app_dir()
 DATA_DIR = BASE / "data"
 BACKUP_DIR = BASE / "backup"

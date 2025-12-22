@@ -2,13 +2,19 @@ from __future__ import annotations
 from pathlib import Path
 import sys
 
-from PySide6.QtWidgets import QMessageBox, QApplication
-from PySide6.QtCore import QUrl
-from PySide6.QtGui import QDesktopServices
-
-
 def is_frozen() -> bool:
     return bool(getattr(sys, "frozen", False))
+
+def find_project_root(start: Path) -> Path:
+    for p in [start, *start.parents]:
+        if (p / "README.md").exists() or (p / ".gitignore").exists() or (p / "requirements.txt").exists():
+            return p
+    return start.parents[0]
+
+def app_dir() -> Path:
+    if getattr(sys, "frozen", False):
+        return Path(sys.executable).resolve().parent  # exe 있는 폴더
+    return find_project_root(Path(__file__).resolve()) # 프로젝트 폴더
 
 
 # 리소스(아이콘, qss, 이미지 등) 기준 경로

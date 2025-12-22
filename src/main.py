@@ -2,9 +2,9 @@
 
 from __future__ import annotations
 import sys, logging
-from pathutils import resource_path
+from modules.pathutils import resource_path
 from logger import setup_logging
-from modules.storage import ensure_files_exist, migrate_users_phone_keys_once, HISTORY_DIR, DATA_DIR
+from modules.storage import ensure_files_exist, migrate_users_phone_keys_once, HISTORY_DIR #, DATA_DIR
 from PySide6.QtWidgets import QApplication
 from ui.main_window_view import MainWindow
 from modules.controller import Controller
