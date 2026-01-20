@@ -2,5 +2,4 @@
 **/__pycache__/
 /data/
 /backup/
-maintenance_notes.txt
-git_push.ps1
+maintenance_notes
