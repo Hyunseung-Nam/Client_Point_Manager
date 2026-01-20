@@ -5,11 +5,11 @@ from pathlib import Path
 from datetime import datetime
 from .validator import validate_phone
 from .calculator import normalize_phone
-from .pathutils import app_dir
+from .pathutils import data_base_dir
 
 logger = logging.getLogger(__name__)
     
-BASE = app_dir()
+BASE = data_base_dir()
 DATA_DIR = BASE / "data"
 BACKUP_DIR = BASE / "backup"
 USER_FILE = DATA_DIR / "users.json"
