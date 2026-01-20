@@ -51,19 +51,43 @@ def safe_write_json(path: Path, obj, *, backup_dir, ensure_ascii=False, indent=4
         logger.exception("safe_write_json 실패: path=%s tmp=%s bak_dir=%s", path, tmp_path, backup_dir)
         raise
 
+def _load_json_file(path: Path, empty_value, *, not_found_msg: str, parse_error_msg: str, os_error_msg: str, log_path: Path):
+    """
+    JSON 파일을 읽어 파싱하고 실패 시 기본값을 반환한다.
+
+    Args:
+        path: 읽을 JSON 파일 경로
+        empty_value: 실패 시 반환할 기본값
+        not_found_msg: 파일 미존재 로그 메시지
+        parse_error_msg: JSON 파싱 실패 로그 메시지
+        os_error_msg: OS 읽기 실패 로그 메시지
+        log_path: 로그에 출력할 경로
+
+    Returns:
+        object: 파싱된 JSON 또는 기본값
+    """
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        logger.warning(not_found_msg, log_path)
+        return empty_value
+    except json.JSONDecodeError:
+        logger.error(parse_error_msg, log_path)
+        return empty_value
+    except OSError:
+        logger.exception(os_error_msg, log_path)
+        return empty_value
+
 def load_users():
     """사용자 데이터를 파일에서 로드 (예시: 항상 빈 dict 반환)"""
-    try:
-        return json.loads(USER_FILE.read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        logger.warning("users.json 없음 - 빈 데이터로 시작: %s", USER_FILE)
-        return {}
-    except json.JSONDecodeError:
-        logger.error("users.json JSON 파싱 실패(파일 손상 가능): %s", USER_FILE)
-        return {}
-    except OSError:
-        logger.exception("users.json 읽기 실패(OS): %s", USER_FILE)
-        return {}
+    return _load_json_file(
+        USER_FILE,
+        {},
+        not_found_msg="users.json 없음 - 빈 데이터로 시작: %s",
+        parse_error_msg="users.json JSON 파싱 실패(파일 손상 가능): %s",
+        os_error_msg="users.json 읽기 실패(OS): %s",
+        log_path=USER_FILE,
+    )
     
 def save_users(data):
     """사용자 데이터를 파일에 저장"""
@@ -76,17 +100,14 @@ def save_users(data):
 
 def load_history():
     """로그 데이터를 파일에서 로드"""
-    try:
-        return json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
-    except FileNotFoundError:
-        logger.warning("history.json 없음 - 빈 데이터로 시작: %s", USER_FILE)
-        return []
-    except json.JSONDecodeError:
-        logger.error("history.json JSON 파싱 실패(파일 손상 가능): %s", USER_FILE)
-        return []
-    except OSError:
-        logger.exception("history.json 읽기 실패(OS): %s", USER_FILE)
-        return []
+    return _load_json_file(
+        HISTORY_FILE,
+        [],
+        not_found_msg="history.json 없음 - 빈 데이터로 시작: %s",
+        parse_error_msg="history.json JSON 파싱 실패(파일 손상 가능): %s",
+        os_error_msg="history.json 읽기 실패(OS): %s",
+        log_path=USER_FILE,
+    )
 
 def save_history(HISTORY_entry):
     """로그 데이터를 파일에 추가"""
