@@ -6,368 +6,110 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>348</width>
-    <height>330</height>
+    <width>360</width>
+    <height>280</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>240</y>
-     <width>341</width>
-     <height>32</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Orientation::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::StandardButton::Cancel|QDialogButtonBox::StandardButton::Ok</set>
-   </property>
-  </widget>
-  <widget class="QTableWidget" name="tableWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>-50</x>
-     <y>-50</y>
-     <width>521</width>
-     <height>421</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QWidget {
-    background-color: #f5f6fa;
-    font-family: 'Segoe UI';
-    color: #2f3640;
-    font-size: 14px;
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  font-family: 'Noto Sans KR';
+  font-size: 13px;
+  color: #1D1D1F;
+  background-color: #F5F5F7;
+}
+QLineEdit, QSpinBox, QTextEdit, QComboBox {
+  background: #FFFFFF;
+  border: 1px solid #D2D2D7;
+  border-radius: 8px;
+  padding: 6px 8px;
+}
+QLineEdit:focus, QSpinBox:focus, QTextEdit:focus, QComboBox:focus {
+  border: 1px solid #0071E3;
+}
+QPushButton {
+  background: #0071E3;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+QPushButton:disabled {
+  background: #C7C7CC;
+  color: #FFFFFF;
 }</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_5">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>30</y>
-     <width>161</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>14</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>신규 사용자 등록</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>80</y>
-     <width>71</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>전화번호</string>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="inputPhone">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>90</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QLineEdit {
-    background-color: white;
-    border: 1px solid #dcdde1;
-    border-radius: 6px;
-    padding: 6px;
-}
-
-QLineEdit:focus {
-    border: 1px solid #4b7bec;
-}
-
-QLineEdit:placeholder {
-    color: #888888;     
-    font-style: italic;  
-}</string>
-   </property>
-   <property name="placeholderText">
-    <string>전화번호를 입력해주세요</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_3">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>130</y>
-     <width>71</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>활동 A 횟수</string>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="spinLaundry">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>140</y>
-     <width>81</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QSpinBox {
-    background-color: white;
-    border: 1px solid #dcdde1;
-    border-radius: 6px;
-    padding: 4px;
-}
-
-QSpinBox:focus {
-    border: 1px solid #4b7bec;
-}
-
-QSpinBox {
-    background: #FFFFFF;      /* 흰색 배경 */
-    color: #000000;           /* 검은 글자 */
-    border: 1px solid #D0D0D0;
-    border-radius: 6px;
-    padding: 4px 6px;
-}
-
-
-
-</string>
-   </property>
-   <property name="maximum">
-    <number>20</number>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_2">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>180</y>
-     <width>71</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="text">
-    <string>활동 B 횟수</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnSubmit">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>260</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #4b7bec;
-    color: white;
-    border-radius: 8px;
-    padding: 6px;
-    font-weight: bold;
-}
-
-QPushButton:hover {
-    background-color: #3867d6;
-}
-
-QPushButton:pressed {
-    background-color: #2d5dc0;
-}
-</string>
-   </property>
-   <property name="text">
-    <string>추가</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btnCancel">
-   <property name="geometry">
-    <rect>
-     <x>180</x>
-     <y>260</y>
-     <width>131</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Noto Sans KR</family>
-     <pointsize>11</pointsize>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-    background-color: #4b7bec;
-    color: white;
-    border-radius: 8px;
-    padding: 6px;
-    font-weight: bold;
-}
-
-QPushButton:hover {
-    background-color: #3867d6;
-}
-
-QPushButton:pressed {
-    background-color: #2d5dc0;
-}
-</string>
-   </property>
-   <property name="text">
-    <string>취소</string>
-   </property>
-  </widget>
-  <widget class="QSpinBox" name="spinDry">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>190</y>
-     <width>81</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>11</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QSpinBox {
-    background-color: white;
-    border: 1px solid #dcdde1;
-    border-radius: 6px;
-    padding: 4px;
-}
-
-QSpinBox:focus {
-    border: 1px solid #4b7bec;
-}
-
-QSpinBox {
-    background-color: white;
-    border: 1px solid #dcdde1;
-    border-radius: 6px;
-    padding: 4px;
-}
-
-QSpinBox:focus {
-    border: 1px solid #4b7bec;
-}
-
-QSpinBox {
-    background: #FFFFFF;      /* 흰색 배경 */
-    color: #000000;           /* 검은 글자 */
-    border: 1px solid #D0D0D0;
-    border-radius: 6px;
-    padding: 4px 6px;
-}
-
-
-
-</string>
-   </property>
-   <property name="maximum">
-    <number>20</number>
-   </property>
-  </widget>
+  </property>
+  <layout class="QVBoxLayout" name="rootLayout">
+   <item>
+    <widget class="QLabel" name="lblTitle">
+     <property name="text">
+      <string>신규 고객 등록</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblName">
+       <property name="text">
+        <string>이름</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="leName"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblPhone">
+       <property name="text">
+        <string>전화번호</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lePhone">
+       <property name="placeholderText">
+        <string>전화번호(숫자만)</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblMemo">
+       <property name="text">
+        <string>메모</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QTextEdit" name="teMemo"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonRow">
+     <item>
+      <widget class="QPushButton" name="btnSubmit">
+       <property name="text">
+        <string>추가</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnCancel">
+       <property name="text">
+        <string>취소</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>InputDialog</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>InputDialog</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

@@ -1,10 +1,10 @@
 .venv
-**/*__pycache__/
-**/*/build/
-**/*/dist/
-**/*.exe
-**/*/release/
-**/*.spec
+**__pycache__/
+**/build/
+**/dist/
+**.exe
+**/release/
+**.spec
 /data/
 /backup/
 maintenance_notes

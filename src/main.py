@@ -2,10 +2,11 @@
 
 from __future__ import annotations
 import sys, logging
-from modules.pathutils import resource_path
+from modules.pathutils import resource_path, app_dir
 from logger import setup_logging
 from modules.storage import ensure_files_exist, migrate_users_phone_keys_once, HISTORY_DIR #, DATA_DIR
 from PySide6.QtWidgets import QApplication
+from PySide6.QtGui import QFontDatabase, QFont
 from ui.main_window_view import MainWindow
 from modules.controller import Controller
 
@@ -22,6 +23,18 @@ def main():
     try:
         ensure_files_exist()
         migrate_users_phone_keys_once()
+
+        # 폰트 로드 (assets/fonts)
+        try:
+            font_dir = app_dir() / "assets" / "fonts"
+            regular_path = font_dir / "NotoSansKR-Regular.ttf"
+            bold_path = font_dir / "NotoSansKR-Bold.ttf"
+            QFontDatabase.addApplicationFont(str(regular_path))
+            QFontDatabase.addApplicationFont(str(bold_path))
+            app.setFont(QFont("Noto Sans KR"))
+            logger.info("폰트 로드 완료: %s", font_dir)
+        except Exception:
+            logger.exception("폰트 로드 실패")
 
         # View 객체 생성 (MainWindow)
         mainwindow_view = MainWindow()
