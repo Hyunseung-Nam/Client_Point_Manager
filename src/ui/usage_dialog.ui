@@ -13,34 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">QWidget {
-  font-family: 'Noto Sans KR';
-  font-size: 13px;
-  color: #1D1D1F;
-  background-color: #F5F5F7;
-}
-QLineEdit, QSpinBox, QTextEdit, QComboBox {
-  background: #FFFFFF;
-  border: 1px solid #D2D2D7;
-  border-radius: 8px;
-  padding: 6px 8px;
-}
-QLineEdit:focus, QSpinBox:focus, QTextEdit:focus, QComboBox:focus {
-  border: 1px solid #0071E3;
-}
-QPushButton {
-  background: #0071E3;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 12px;
-}
-QPushButton:disabled {
-  background: #C7C7CC;
-  color: #FFFFFF;
-}</string>
-  </property>
   <widget class="QTableWidget" name="tableWidget_2">
    <property name="geometry">
     <rect>
@@ -53,7 +25,7 @@ QPushButton:disabled {
    <property name="styleSheet">
     <string notr="true">QWidget {
     background-color: #f5f6fa;
-    font-family: 'Noto Sans KR';
+    font-family: 'Segoe UI';
     color: #2f3640;
     font-size: 14px;
 }</string>

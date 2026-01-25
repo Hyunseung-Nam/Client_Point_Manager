@@ -6,399 +6,476 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
-    <height>720</height>
+    <width>1173</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">QWidget {
-  font-family: 'Noto Sans KR';
-  font-size: 14px;
-  color: #1D1D1F;
-  background-color: #F5F5F7;
-}
-QLineEdit, QSpinBox, QTextEdit, QComboBox {
-  background: #FFFFFF;
-  border: 1px solid #D2D2D7;
-  border-radius: 8px;
-  padding: 6px 8px;
-}
-QLineEdit:focus, QSpinBox:focus, QTextEdit:focus, QComboBox:focus {
-  border: 1px solid #0071E3;
-}
-QPushButton {
-  background: #0071E3;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 8px;
-  padding: 8px 12px;
-}
-QPushButton:disabled {
-  background: #C7C7CC;
-  color: #FFFFFF;
-}
-QTableWidget {
-  background: #FFFFFF;
-  border: 1px solid #E5E5EA;
-  border-radius: 12px;
-  gridline-color: #E5E5EA;
-}
-QHeaderView::section {
-  background: #F5F5F7;
-  color: #1D1D1F;
-  border: none;
-  padding: 6px;
-  font-weight: 600;
-}
-QGroupBox {
-  border: 1px solid #E5E5EA;
-  border-radius: 12px;
-  margin-top: 8px;
-  background: #FFFFFF;
-}
-QGroupBox::title {
-  subcontrol-origin: margin;
-  left: 12px;
-  padding: 0 4px;
-  font-weight: 600;
-}</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="rootLayout">
-    <property name="leftMargin">
-     <number>16</number>
+   <widget class="QTableWidget" name="background">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-20</y>
+      <width>1191</width>
+      <height>721</height>
+     </rect>
     </property>
-    <property name="topMargin">
-     <number>16</number>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>-1</pointsize>
+     </font>
     </property>
-    <property name="rightMargin">
-     <number>16</number>
+    <property name="styleSheet">
+     <string notr="true">QWidget {
+    background-color: #f5f6fa;
+    font-family: 'Segoe UI';
+    color: #2f3640;
+    font-size: 14px;
+}</string>
     </property>
-    <property name="bottomMargin">
-     <number>16</number>
+    <property name="showGrid">
+     <bool>true</bool>
     </property>
-    <property name="spacing">
-     <number>12</number>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>107</number>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="btnAddCustomer">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>50</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
     </property>
-    <item>
-     <layout class="QHBoxLayout" name="topBarLayout">
-      <item>
-       <widget class="QLineEdit" name="leSearch">
-        <property name="placeholderText">
-         <string>고객 검색(이름/전화)</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnAddCustomer">
-        <property name="text">
-         <string>고객 추가</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnRefresh">
-        <property name="text">
-         <string>새로고침</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLabel" name="lblStatusToast">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: #6E6E73;</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="contentLayout">
-      <property name="spacing">
-       <number>12</number>
-      </property>
-      <item>
-       <widget class="QTableWidget" name="tblCustomers">
-        <property name="columnCount">
-         <number>6</number>
-        </property>
-        <attribute name="horizontalHeaderDefaultSectionSize">
-         <number>120</number>
-        </attribute>
-        <column>
-         <property name="text">
-          <string>이름</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>전화번호</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>잔여포인트</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>이번달</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>최근방문</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>지급필요</string>
-         </property>
-        </column>
-       </widget>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="rightPanelLayout">
-        <item>
-         <widget class="QGroupBox" name="grpCustomer">
-          <property name="title">
-           <string>고객 정보</string>
-          </property>
-          <layout class="QGridLayout" name="customerGrid">
-           <property name="horizontalSpacing">
-            <number>12</number>
-           </property>
-           <property name="verticalSpacing">
-            <number>8</number>
-           </property>
-           <item row="0" column="0">
-            <widget class="QLabel" name="lblCustomerNameLabel">
-             <property name="text">
-              <string>이름</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="lblCustomerName">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="lblCustomerPhoneLabel">
-             <property name="text">
-              <string>전화번호</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QLabel" name="lblCustomerPhone">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="lblPointsRemainingLabel">
-             <property name="text">
-              <string>잔여 포인트</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="1">
-            <widget class="QLabel" name="lblPointsRemaining">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <widget class="QLabel" name="lblLaundryCountLabel">
-             <property name="text">
-              <string>빨래</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="1">
-            <widget class="QLabel" name="lblLaundryCount">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
-            <widget class="QLabel" name="lblDryCountLabel">
-             <property name="text">
-              <string>건조</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="1">
-            <widget class="QLabel" name="lblDryCount">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="0">
-            <widget class="QLabel" name="lblTotalCountLabel">
-             <property name="text">
-              <string>총합</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="1">
-            <widget class="QLabel" name="lblTotalCount">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="lblLastVisitLabel">
-             <property name="text">
-              <string>최근 방문</string>
-             </property>
-            </widget>
-           </item>
-           <item row="6" column="1">
-            <widget class="QLabel" name="lblLastVisit">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="0">
-            <widget class="QLabel" name="lblMonthCountLabel">
-             <property name="text">
-              <string>이번달 방문</string>
-             </property>
-            </widget>
-           </item>
-           <item row="7" column="1">
-            <widget class="QLabel" name="lblMonthCount">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="0">
-            <widget class="QLabel" name="lblRewardNeededBadgeLabel">
-             <property name="text">
-              <string>지급 필요</string>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="1">
-            <widget class="QLabel" name="lblRewardNeededBadge">
-             <property name="text">
-              <string>-</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <layout class="QVBoxLayout" name="actionButtonsLayout">
-          <item>
-           <layout class="QHBoxLayout" name="actionRow1">
-            <item>
-             <widget class="QPushButton" name="btnLaundryPlus">
-              <property name="text">
-               <string>빨래 +1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="btnDryPlus">
-              <property name="text">
-               <string>건조 +1</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="actionRow2">
-            <item>
-             <widget class="QPushButton" name="btnBundlePlus">
-              <property name="text">
-               <string>빨래+건조 +1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="btnPointUse">
-              <property name="text">
-               <string>포인트 사용</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <widget class="QPushButton" name="btnGrantReward">
-            <property name="text">
-             <string>지급 완료</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="grpRecentHistory">
-          <property name="title">
-           <string>최근 기록</string>
-          </property>
-          <layout class="QVBoxLayout" name="recentHistoryLayout">
-           <item>
-            <widget class="QListWidget" name="listRecentHistory"/>
-           </item>
-           <item>
-            <widget class="QPushButton" name="btnOpenFullHistory">
-             <property name="text">
-              <string>전체 기록 보기</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </item>
-    <item>
-     <layout class="QHBoxLayout" name="bottomBarLayout">
-      <item>
-       <widget class="QPushButton" name="btnUndo">
-        <property name="text">
-         <string>되돌리기</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btnAdmin">
-        <property name="text">
-         <string>관리자</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </item>
-   </layout>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>신규 사용자 등록</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnOpenLog">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>570</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>로그 보기</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>10</y>
+      <width>331</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>17</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="tabletTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>사용자 포인트 관리 프로그램</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchInput">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>871</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: white;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #4b7bec;
+}
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>전화번호를 입력해주세요</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>1121</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget#tableWidget {
+    background: white;
+    border: 1px solid #E0E0E0;
+    gridline-color: #E0E0E0;
+    alternate-background-color: #F7F7F7;
+    selection-background-color: #D6E4FF;
+    selection-color: #000000;
+    border-radius: 11px;
+    padding: 8px;
+}
+
+QHeaderView::section {
+    background-color: #F0F0F0;
+    padding: 6px;
+    border: 0px;
+    font-weight: bold;
+    color: #444;
+}
+
+QTableWidget::item {
+    padding: 4px;
+}
+
+/* 포커스 테두리 제거 */
+QTableWidget::item:focus {
+    outline: none;
+    border: none;
+}</string>
+    </property>
+    <property name="columnCount">
+     <number>8</number>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>138</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>선택</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>전화번호</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>활동 A</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>활동 B</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>합계</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>포인트 지급 필요</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>남은 횟수</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>총 포인트</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QPushButton" name="btnGivePoints">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>570</y>
+      <width>561</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>포인트 지급</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSearch">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>50</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>검색</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRefresh">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#btnRefresh {
+    background-color: #F5F5F5;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+QPushButton#btnRefresh:hover {
+    background-color: #E0E0E0;
+}
+
+QPushButton#btnRefresh:pressed {
+    background-color: #D9D9D9;
+}</string>
+    </property>
+    <property name="text">
+     <string>새로 고침</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAddUsage">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>570</y>
+      <width>271</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #4b7bec;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #3867d6;
+}
+
+QPushButton:pressed {
+    background-color: #2d5dc0;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>활동 횟수 추가</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnDeleteCustomer">
+    <property name="geometry">
+     <rect>
+      <x>1010</x>
+      <y>610</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Noto Sans KR</family>
+      <pointsize>11</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #C62828;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QPushButton:hover {
+    background-color: #B71C1C;
+}
+
+QPushButton:pressed {
+    background-color: #8E0000;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>사용자 삭제</string>
+    </property>
+   </widget>
   </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1173</width>
+     <height>33</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

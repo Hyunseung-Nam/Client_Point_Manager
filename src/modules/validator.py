@@ -6,19 +6,9 @@
 # --------------------------------------------------
 def validate_phone(phone: str) -> bool:
     """
-    전화번호 형식 검증.
-
-    Args:
-        phone: 입력 전화번호.
-
-    Returns:
-        bool: 유효 여부.
-
-    Side Effects:
-        없음
-
-    Raises:
-        없음
+    전화번호 형식 검증
+    - 01012345678
+    - 010-1234-5678
     """
     if not phone:
         return False
@@ -45,19 +35,10 @@ def validate_phone(phone: str) -> bool:
 # --------------------------------------------------
 def validate_count(value: str) -> bool:
     """
-    숫자 입력 검증.
-
-    Args:
-        value: 입력 문자열.
-
-    Returns:
-        bool: 유효 여부.
-
-    Side Effects:
-        없음
-
-    Raises:
-        없음
+    - 비어있지 않음
+    - 숫자 문자열
+    - 음수 불가
+    - 너무 큰 수 제한 (ex: 1회 입력인데 999 입력하는 실수 방지)
     """
     if not value:
         return False
@@ -80,79 +61,6 @@ def validate_count(value: str) -> bool:
 # 3) 공백/빈 문자열 검증
 # --------------------------------------------------
 def validate_not_empty(value: str) -> bool:
-    """
-    공백/빈 문자열 검증.
-
-    Args:
-        value: 입력 문자열.
-
-    Returns:
-        bool: 유효 여부.
-
-    Side Effects:
-        없음
-
-    Raises:
-        없음
-    """
     if not value or value.strip() == "":
         return False
     return True
-
-def valid_phone(phone: str) -> bool:
-    """
-    전화번호 유효성 검사(별칭).
-
-    Args:
-        phone: 입력 전화번호.
-
-    Returns:
-        bool: 유효 여부.
-
-    Side Effects:
-        없음
-
-    Raises:
-        없음
-    """
-    return validate_phone(phone)
-
-def parse_int(value, default: int = 0) -> int:
-    """
-    안전하게 정수로 변환한다.
-
-    Args:
-        value: 변환할 값.
-        default: 변환 실패 시 기본값.
-
-    Returns:
-        int: 변환된 정수.
-
-    Side Effects:
-        없음
-
-    Raises:
-        ValueError: 변환 실패 시.
-    """
-    try:
-        return int(value)
-    except (TypeError, ValueError) as exc:
-        raise ValueError("정수 변환 실패") from exc
-
-def non_negative(value: int) -> bool:
-    """
-    음수 여부를 판단한다.
-
-    Args:
-        value: 검사할 값.
-
-    Returns:
-        bool: 0 이상 여부.
-
-    Side Effects:
-        없음
-
-    Raises:
-        없음
-    """
-    return value >= 0

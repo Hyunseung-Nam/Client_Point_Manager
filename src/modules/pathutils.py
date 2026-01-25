@@ -87,7 +87,7 @@ def data_base_dir() -> Path:
         Path: 데이터 기준 경로
     """
     if is_frozen():
-        return _user_data_dir("CRM", "CRM")
+        return _user_data_dir("ClientPointManager", "ClientPointManager")
     return find_project_root(Path(__file__).resolve())
 
 
